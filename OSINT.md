@@ -16,10 +16,13 @@
 **Входные данные:**
 - IP-адрес: `92.51.39.106`
 
-**Результаты сканирования:**  
+**Результаты сканирования:**
+
 <details>
 <summary>screenshot Shodan</summary>
+  
 ![](screenshots/OSINT/Shodan/shodan.png)
+
 </details>
 
 **Вывод:**  
@@ -34,10 +37,13 @@
 **Входные данные:**
 - IP-адрес: `92.51.39.106`
 
-**Результаты сканирования:**  
+**Результаты сканирования:**
+
 <details>
 <summary>screenshot Censys Search</summary>
-![](/screenshots/OSINT/Censys/censys 1.png)
+  
+![](screenshots/OSINT/Censys/censys1.png)
+
 </details>
 
 **Вывод:**
