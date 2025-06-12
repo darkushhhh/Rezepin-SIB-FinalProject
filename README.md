@@ -25,3 +25,11 @@
 | 8  | Средний       | Weak Admin Password                         | (A07:2021-Identification and Authentication Failures) | 8050               |
 | 9  | Средний       | Brute Force Attack                          | (A07:2021-Identification and Authentication Failures) | 8050, 7788         |
 | 10 | Средний       | Cross-Site Scripting (XSS)                  | (A03:2021-Injection)                          | 8050, 7788         |
+
+---
+
+## Перейти к следующей странице
+ 
+[**Далее: Страница OSINT**](./osint.md)
+
+---
