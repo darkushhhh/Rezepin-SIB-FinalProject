@@ -60,9 +60,12 @@
 - IP-адрес: `92.51.39.106`
 
 **Результаты сканирования:**  
+
 <details>
 <summary>screenshot ZoomEye</summary>
+  
 ![](screenshots/OSINT/ZoomEye/ZoomEye.png)
+
 </details>
 
 **Вывод:**
