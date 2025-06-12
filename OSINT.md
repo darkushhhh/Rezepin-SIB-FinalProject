@@ -37,7 +37,7 @@
 **Результаты сканирования:**  
 <details>
 <summary>screenshot Censys Search</summary>
-![](screenshots/OSINT/Censys/censys 1.png)
+![](/screenshots/OSINT/Censys/censys 1.png)
 </details>
 
 **Вывод:**
