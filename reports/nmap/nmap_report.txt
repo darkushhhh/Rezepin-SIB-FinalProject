@@ -1,0 +1,82 @@
+┌──(kaliroot㉿kaliroot)-[~]
+└─$ nmap -A -sV --version-all -O -p 8050 --reason -T4 --defeat-rst-ratelimit 92.51.39.106
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-06-02 07:28 CDT
+Nmap scan report for 1427771-cg36175.tw1.ru (92.51.39.106)
+Host is up, received reset ttl 128 (0.00016s latency).
+
+PORT     STATE SERVICE REASON          VERSION
+8050/tcp open  http    syn-ack ttl 128 Apache httpd 2.4.7 ((Ubuntu))
+|_http-title: NetologyVulnApp.com
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: DD-WRT v24-sp2 (Linux 2.4.37) (98%), Actiontec MI424WR-GEN3I WAP (98%), Linux 3.2 (96%), Linux 4.4 (94%), Microsoft Windows XP SP3 or Windows 7 or Windows Server 2012 (93%), BlueArc Titan 2100 NAS device (91%), VMware Player virtual NAT device (91%), Microsoft Windows XP SP3 (91%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT     ADDRESS
+1   0.06 ms 192.168.92.2
+2   0.06 ms 1427771-cg36175.tw1.ru (92.51.39.106)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 26.38 seconds
+   
+
+
+                                                                                                                                                            
+┌──(kaliroot㉿kaliroot)-[~]
+└─$ nmap -A -sV --version-all -O -p 7788 --reason -T4 --defeat-rst-ratelimit 92.51.39.106
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-06-02 07:29 CDT
+Nmap scan report for 1427771-cg36175.tw1.ru (92.51.39.106)
+Host is up, received reset ttl 128 (0.00019s latency).
+
+PORT     STATE SERVICE REASON          VERSION
+7788/tcp open  http    syn-ack ttl 128 Tornado httpd 5.1.1
+|_http-title: Beemer
+|_http-server-header: TornadoServer/5.1.1
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: DD-WRT v24-sp2 (Linux 2.4.37) (98%), Actiontec MI424WR-GEN3I WAP (98%), Linux 3.2 (96%), Linux 4.4 (94%), Microsoft Windows XP SP3 or Windows 7 or Windows Server 2012 (93%), BlueArc Titan 2100 NAS device (91%), VMware Player virtual NAT device (91%), Microsoft Windows XP SP3 (91%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT     ADDRESS
+1   0.12 ms 192.168.92.2
+2   0.14 ms 1427771-cg36175.tw1.ru (92.51.39.106)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 17.71 seconds
+  
+
+
+
+                                                                                                                                                             
+┌──(kaliroot㉿kaliroot)-[~]
+└─$ nmap -A -sV --version-all -O -p 22 --reason -T4 --defeat-rst-ratelimit 92.51.39.106
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-06-02 07:30 CDT
+Nmap scan report for 1427771-cg36175.tw1.ru (92.51.39.106)
+Host is up, received reset ttl 128 (0.00018s latency).
+
+PORT   STATE SERVICE REASON          VERSION
+22/tcp open  ssh     syn-ack ttl 128 OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 35:81:8a:da:50:19:aa:65:c1:95:ad:2f:db:a9:ea:ed (RSA)
+|   256 7b:c8:3e:dc:d6:70:77:37:be:a5:72:6d:20:5b:ee:8f (ECDSA)
+|_  256 31:f5:6d:b5:34:6a:96:fd:97:5c:5e:4e:2c:64:fc:4f (ED25519)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: DD-WRT v24-sp2 (Linux 2.4.37) (98%), Actiontec MI424WR-GEN3I WAP (98%), Linux 3.2 (96%), Linux 4.4 (94%), Microsoft Windows XP SP3 or Windows 7 or Windows Server 2012 (93%), BlueArc Titan 2100 NAS device (91%), VMware Player virtual NAT device (91%), Microsoft Windows XP SP3 (91%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT     ADDRESS
+1   0.10 ms 192.168.92.2
+2   0.13 ms 1427771-cg36175.tw1.ru (92.51.39.106)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 14.99 seconds
