@@ -1,0 +1,1475 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0"
+    />
+    <title>FFUF Report - </title>
+
+    
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+	/>
+	<link 
+	  rel="stylesheet" 
+	  type="text/css" 
+	  href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css"
+	/>
+  
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">FFUF</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        </ul>
+      </div>
+    </nav>
+
+    <main class="section no-pad-bot" id="index-banner">
+      <div class="container">
+        <br /><br />
+        <h1 class="header center ">FFUF Report</h1>
+        <div class="row center">
+
+		<pre>ffuf -w dirbrute.txt -u http://92.51.39.106:8050/FUZZ -t 50 -o output.html -of html</pre>
+		<pre>2025-06-02T09:05:12-05:00</pre>
+
+   <table id="ffufreport">
+        <thead>
+        <div style="display:none">
+|result_raw|StatusCode|FUZZ|Url|RedirectLocation|Position|ContentLength|ContentWords|ContentLines|ContentType|Duration|Resultfile|ScraperData|FfufHash|
+        </div>
+          <tr>
+              <th>Status</th>
+              <th>FUZZ</th>
+			  <th>URL</th>
+			  <th>Redirect location</th>
+              <th>Position</th>
+              <th>Length</th>
+              <th>Words</th>
+			  <th>Lines</th>
+			  <th>Type</th>
+              <th>Duration</th>
+			  <th>Resultfile</th>
+              <th>Scraper data</th>
+              <th>Ffuf Hash</th>
+          </tr>
+        </thead>
+
+        <tbody>
+			
+                <div style="display:none">
+|result_raw|301|upload|http://92.51.39.106:8050/upload|http://92.51.39.106:8050/upload/|87|319|20|10|text/html; charset=iso-8859-1|89.786463ms|||88b1c57|
+                </div>
+                <tr class="result-301" style="background-color: #bbbbe6;">
+                    <td><font color="black" class="status-code">301</font></td>
+                    
+                        <td>upload</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/upload">http://92.51.39.106:8050/upload</a></td>
+                    <td><a href="http://92.51.39.106:8050/upload/">http://92.51.39.106:8050/upload/</a></td>
+                    <td>87</td>
+                    <td>319</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>89.786463ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c57</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|action|http://92.51.39.106:8050/action||260|80668|281|287|application/x-shockwave-flash|100.986925ms|||88b1c104|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>action</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/action">http://92.51.39.106:8050/action</a></td>
+                    <td><a href=""></a></td>
+                    <td>260</td>
+                    <td>80668</td>
+                    <td>281</td>
+					<td>287</td>
+					<td>application/x-shockwave-flash</td>
+					<td>100.986925ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c104</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|301|admin|http://92.51.39.106:8050/admin|http://92.51.39.106:8050/admin/|329|318|20|10|text/html; charset=iso-8859-1|89.44224ms|||88b1c149|
+                </div>
+                <tr class="result-301" style="background-color: #bbbbe6;">
+                    <td><font color="black" class="status-code">301</font></td>
+                    
+                        <td>admin</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/admin">http://92.51.39.106:8050/admin</a></td>
+                    <td><a href="http://92.51.39.106:8050/admin/">http://92.51.39.106:8050/admin/</a></td>
+                    <td>329</td>
+                    <td>318</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>89.44224ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c149</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|admin/|http://92.51.39.106:8050/admin/||331|326|34|5|text/html|99.967273ms|||88b1c14b|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>admin/</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/admin/">http://92.51.39.106:8050/admin/</a></td>
+                    <td><a href=""></a></td>
+                    <td>331</td>
+                    <td>326</td>
+                    <td>34</td>
+					<td>5</td>
+					<td>text/html</td>
+					<td>99.967273ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c14b</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|admin/.htaccess|http://92.51.39.106:8050/admin/.htaccess||641|296|21|11|text/html; charset=iso-8859-1|100.550395ms|||88b1c281|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>admin/.htaccess</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/admin/.htaccess">http://92.51.39.106:8050/admin/.htaccess</a></td>
+                    <td><a href=""></a></td>
+                    <td>641</td>
+                    <td>296</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>100.550395ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c281</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|admin/?/login|http://92.51.39.106:8050/admin/?/login||785|326|34|5|text/html|110.715311ms|||88b1c311|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>admin/?/login</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/admin/?/login">http://92.51.39.106:8050/admin/?/login</a></td>
+                    <td><a href=""></a></td>
+                    <td>785</td>
+                    <td>326</td>
+                    <td>34</td>
+					<td>5</td>
+					<td>text/html</td>
+					<td>110.715311ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c311</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|301|cart|http://92.51.39.106:8050/cart|http://92.51.39.106:8050/cart/|1880|317|20|10|text/html; charset=iso-8859-1|107.274128ms|||88b1c758|
+                </div>
+                <tr class="result-301" style="background-color: #bbbbe6;">
+                    <td><font color="black" class="status-code">301</font></td>
+                    
+                        <td>cart</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/cart">http://92.51.39.106:8050/cart</a></td>
+                    <td><a href="http://92.51.39.106:8050/cart/">http://92.51.39.106:8050/cart/</a></td>
+                    <td>1880</td>
+                    <td>317</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>107.274128ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c758</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|cgi-bin/|http://92.51.39.106:8050/cgi-bin/||1959|289|21|11|text/html; charset=iso-8859-1|90.316468ms|||88b1c7a7|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>cgi-bin/</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/cgi-bin/">http://92.51.39.106:8050/cgi-bin/</a></td>
+                    <td><a href=""></a></td>
+                    <td>1959</td>
+                    <td>289</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>90.316468ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c7a7</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|cgi-bin/a1stats/a1disp.cgi|http://92.51.39.106:8050/cgi-bin/a1stats/a1disp.cgi||1966|307|21|11|text/html; charset=iso-8859-1|97.89225ms|||88b1c7ae|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>cgi-bin/a1stats/a1disp.cgi</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/cgi-bin/a1stats/a1disp.cgi">http://92.51.39.106:8050/cgi-bin/a1stats/a1disp.cgi</a></td>
+                    <td><a href=""></a></td>
+                    <td>1966</td>
+                    <td>307</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>97.89225ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c7ae</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|cgi-bin/awstats/|http://92.51.39.106:8050/cgi-bin/awstats/||1967|297|21|11|text/html; charset=iso-8859-1|98.542883ms|||88b1c7af|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>cgi-bin/awstats/</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/cgi-bin/awstats/">http://92.51.39.106:8050/cgi-bin/awstats/</a></td>
+                    <td><a href=""></a></td>
+                    <td>1967</td>
+                    <td>297</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>98.542883ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c7af</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|cgi-bin/htmlscript|http://92.51.39.106:8050/cgi-bin/htmlscript||1970|299|21|11|text/html; charset=iso-8859-1|96.144562ms|||88b1c7b2|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>cgi-bin/htmlscript</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/cgi-bin/htmlscript">http://92.51.39.106:8050/cgi-bin/htmlscript</a></td>
+                    <td><a href=""></a></td>
+                    <td>1970</td>
+                    <td>299</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>96.144562ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c7b2</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|cgi-bin/htimage.exe?2,2|http://92.51.39.106:8050/cgi-bin/htimage.exe?2,2||1969|300|21|11|text/html; charset=iso-8859-1|98.522682ms|||88b1c7b1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>cgi-bin/htimage.exe?2,2</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/cgi-bin/htimage.exe?2,2">http://92.51.39.106:8050/cgi-bin/htimage.exe?2,2</a></td>
+                    <td><a href=""></a></td>
+                    <td>1969</td>
+                    <td>300</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>98.522682ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c7b1</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|cgi-bin/imagemap.exe?2,2|http://92.51.39.106:8050/cgi-bin/imagemap.exe?2,2||1971|301|21|11|text/html; charset=iso-8859-1|97.587735ms|||88b1c7b3|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>cgi-bin/imagemap.exe?2,2</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/cgi-bin/imagemap.exe?2,2">http://92.51.39.106:8050/cgi-bin/imagemap.exe?2,2</a></td>
+                    <td><a href=""></a></td>
+                    <td>1971</td>
+                    <td>301</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>97.587735ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c7b3</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|cgi-bin/awstats.pl|http://92.51.39.106:8050/cgi-bin/awstats.pl||1968|299|21|11|text/html; charset=iso-8859-1|105.513537ms|||88b1c7b0|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>cgi-bin/awstats.pl</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/cgi-bin/awstats.pl">http://92.51.39.106:8050/cgi-bin/awstats.pl</a></td>
+                    <td><a href=""></a></td>
+                    <td>1968</td>
+                    <td>299</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>105.513537ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c7b0</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|cgi-bin/index.html|http://92.51.39.106:8050/cgi-bin/index.html||1972|299|21|11|text/html; charset=iso-8859-1|107.007212ms|||88b1c7b4|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>cgi-bin/index.html</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/cgi-bin/index.html">http://92.51.39.106:8050/cgi-bin/index.html</a></td>
+                    <td><a href=""></a></td>
+                    <td>1972</td>
+                    <td>299</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>107.007212ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c7b4</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|301|comments|http://92.51.39.106:8050/comments|http://92.51.39.106:8050/comments/|2206|321|20|10|text/html; charset=iso-8859-1|108.940909ms|||88b1c89e|
+                </div>
+                <tr class="result-301" style="background-color: #bbbbe6;">
+                    <td><font color="black" class="status-code">301</font></td>
+                    
+                        <td>comments</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/comments">http://92.51.39.106:8050/comments</a></td>
+                    <td><a href="http://92.51.39.106:8050/comments/">http://92.51.39.106:8050/comments/</a></td>
+                    <td>2206</td>
+                    <td>321</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>108.940909ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c89e</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|301|css|http://92.51.39.106:8050/css|http://92.51.39.106:8050/css/|2531|316|20|10|text/html; charset=iso-8859-1|97.980251ms|||88b1c9e3|
+                </div>
+                <tr class="result-301" style="background-color: #bbbbe6;">
+                    <td><font color="black" class="status-code">301</font></td>
+                    
+                        <td>css</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/css">http://92.51.39.106:8050/css</a></td>
+                    <td><a href="http://92.51.39.106:8050/css/">http://92.51.39.106:8050/css/</a></td>
+                    <td>2531</td>
+                    <td>316</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>97.980251ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c9e3</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.hta|http://92.51.39.106:8050/.hta||3960|285|21|11|text/html; charset=iso-8859-1|98.599071ms|||88b1cf78|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.hta</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.hta">http://92.51.39.106:8050/.hta</a></td>
+                    <td><a href=""></a></td>
+                    <td>3960</td>
+                    <td>285</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>98.599071ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cf78</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess/|http://92.51.39.106:8050/.htaccess/||3963|291|21|11|text/html; charset=iso-8859-1|103.590923ms|||88b1cf7b|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess/</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htaccess/">http://92.51.39.106:8050/.htaccess/</a></td>
+                    <td><a href=""></a></td>
+                    <td>3963</td>
+                    <td>291</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>103.590923ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cf7b</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess~|http://92.51.39.106:8050/.htaccess~||3964|291|21|11|text/html; charset=iso-8859-1|105.974543ms|||88b1cf7c|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess~</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htaccess~">http://92.51.39.106:8050/.htaccess~</a></td>
+                    <td><a href=""></a></td>
+                    <td>3964</td>
+                    <td>291</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>105.974543ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cf7c</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess.bak|http://92.51.39.106:8050/.htaccess.bak||3966|294|21|11|text/html; charset=iso-8859-1|98.56557ms|||88b1cf7e|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess.bak</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htaccess.bak">http://92.51.39.106:8050/.htaccess.bak</a></td>
+                    <td><a href=""></a></td>
+                    <td>3966</td>
+                    <td>294</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>98.56557ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cf7e</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess|http://92.51.39.106:8050/.htaccess||3962|290|21|11|text/html; charset=iso-8859-1|108.521872ms|||88b1cf7a|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htaccess">http://92.51.39.106:8050/.htaccess</a></td>
+                    <td><a href=""></a></td>
+                    <td>3962</td>
+                    <td>290</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>108.521872ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cf7a</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccessBAK|http://92.51.39.106:8050/.htaccessBAK||3969|293|21|11|text/html; charset=iso-8859-1|100.239855ms|||88b1cf81|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccessBAK</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htaccessBAK">http://92.51.39.106:8050/.htaccessBAK</a></td>
+                    <td><a href=""></a></td>
+                    <td>3969</td>
+                    <td>293</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>100.239855ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cf81</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess.BAK|http://92.51.39.106:8050/.htaccess.BAK||3968|294|21|11|text/html; charset=iso-8859-1|109.0835ms|||88b1cf80|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess.BAK</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htaccess.BAK">http://92.51.39.106:8050/.htaccess.BAK</a></td>
+                    <td><a href=""></a></td>
+                    <td>3968</td>
+                    <td>294</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>109.0835ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cf80</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess.bak1|http://92.51.39.106:8050/.htaccess.bak1||3970|295|21|11|text/html; charset=iso-8859-1|106.867388ms|||88b1cf82|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess.bak1</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htaccess.bak1">http://92.51.39.106:8050/.htaccess.bak1</a></td>
+                    <td><a href=""></a></td>
+                    <td>3970</td>
+                    <td>295</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>106.867388ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cf82</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess-dev|http://92.51.39.106:8050/.htaccess-dev||3971|294|21|11|text/html; charset=iso-8859-1|109.340413ms|||88b1cf83|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess-dev</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htaccess-dev">http://92.51.39.106:8050/.htaccess-dev</a></td>
+                    <td><a href=""></a></td>
+                    <td>3971</td>
+                    <td>294</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>109.340413ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cf83</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess-local|http://92.51.39.106:8050/.htaccess-local||3975|296|21|11|text/html; charset=iso-8859-1|99.795032ms|||88b1cf87|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess-local</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htaccess-local">http://92.51.39.106:8050/.htaccess-local</a></td>
+                    <td><a href=""></a></td>
+                    <td>3975</td>
+                    <td>296</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>99.795032ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cf87</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess.inc|http://92.51.39.106:8050/.htaccess.inc||3974|294|21|11|text/html; charset=iso-8859-1|106.749883ms|||88b1cf86|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess.inc</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htaccess.inc">http://92.51.39.106:8050/.htaccess.inc</a></td>
+                    <td><a href=""></a></td>
+                    <td>3974</td>
+                    <td>294</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>106.749883ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cf86</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess_extra|http://92.51.39.106:8050/.htaccess_extra||3973|296|21|11|text/html; charset=iso-8859-1|107.569124ms|||88b1cf85|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess_extra</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htaccess_extra">http://92.51.39.106:8050/.htaccess_extra</a></td>
+                    <td><a href=""></a></td>
+                    <td>3973</td>
+                    <td>296</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>107.569124ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cf85</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess.old|http://92.51.39.106:8050/.htaccess.old||3977|294|21|11|text/html; charset=iso-8859-1|98.890686ms|||88b1cf89|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess.old</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htaccess.old">http://92.51.39.106:8050/.htaccess.old</a></td>
+                    <td><a href=""></a></td>
+                    <td>3977</td>
+                    <td>294</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>98.890686ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cf89</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess-marco|http://92.51.39.106:8050/.htaccess-marco||3976|296|21|11|text/html; charset=iso-8859-1|109.461819ms|||88b1cf88|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess-marco</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htaccess-marco">http://92.51.39.106:8050/.htaccess-marco</a></td>
+                    <td><a href=""></a></td>
+                    <td>3976</td>
+                    <td>296</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>109.461819ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cf88</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccessOLD|http://92.51.39.106:8050/.htaccessOLD||3979|293|21|11|text/html; charset=iso-8859-1|98.324258ms|||88b1cf8b|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccessOLD</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htaccessOLD">http://92.51.39.106:8050/.htaccessOLD</a></td>
+                    <td><a href=""></a></td>
+                    <td>3979</td>
+                    <td>293</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>98.324258ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cf8b</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess_orig|http://92.51.39.106:8050/.htaccess_orig||3982|295|21|11|text/html; charset=iso-8859-1|98.193551ms|||88b1cf8e|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess_orig</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htaccess_orig">http://92.51.39.106:8050/.htaccess_orig</a></td>
+                    <td><a href=""></a></td>
+                    <td>3982</td>
+                    <td>295</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>98.193551ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cf8e</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccessOLD2|http://92.51.39.106:8050/.htaccessOLD2||3980|294|21|11|text/html; charset=iso-8859-1|107.175804ms|||88b1cf8c|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccessOLD2</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htaccessOLD2">http://92.51.39.106:8050/.htaccessOLD2</a></td>
+                    <td><a href=""></a></td>
+                    <td>3980</td>
+                    <td>294</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>107.175804ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cf8c</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess.orig|http://92.51.39.106:8050/.htaccess.orig||3981|295|21|11|text/html; charset=iso-8859-1|109.293211ms|||88b1cf8d|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess.orig</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htaccess.orig">http://92.51.39.106:8050/.htaccess.orig</a></td>
+                    <td><a href=""></a></td>
+                    <td>3981</td>
+                    <td>295</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>109.293211ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cf8d</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess.sample|http://92.51.39.106:8050/.htaccess.sample||3983|297|21|11|text/html; charset=iso-8859-1|107.968744ms|||88b1cf8f|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess.sample</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htaccess.sample">http://92.51.39.106:8050/.htaccess.sample</a></td>
+                    <td><a href=""></a></td>
+                    <td>3983</td>
+                    <td>297</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>107.968744ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cf8f</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess_sc|http://92.51.39.106:8050/.htaccess_sc||3985|293|21|11|text/html; charset=iso-8859-1|107.339113ms|||88b1cf91|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess_sc</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htaccess_sc">http://92.51.39.106:8050/.htaccess_sc</a></td>
+                    <td><a href=""></a></td>
+                    <td>3985</td>
+                    <td>293</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>107.339113ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cf91</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htgroup|http://92.51.39.106:8050/.htgroup||3993|289|21|11|text/html; charset=iso-8859-1|97.050994ms|||88b1cf99|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htgroup</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htgroup">http://92.51.39.106:8050/.htgroup</a></td>
+                    <td><a href=""></a></td>
+                    <td>3993</td>
+                    <td>289</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>97.050994ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cf99</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess.txt|http://92.51.39.106:8050/.htaccess.txt||3986|294|21|11|text/html; charset=iso-8859-1|105.793435ms|||88b1cf92|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess.txt</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htaccess.txt">http://92.51.39.106:8050/.htaccess.txt</a></td>
+                    <td><a href=""></a></td>
+                    <td>3986</td>
+                    <td>294</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>105.793435ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cf92</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htaccess.save|http://92.51.39.106:8050/.htaccess.save||3984|295|21|11|text/html; charset=iso-8859-1|108.362165ms|||88b1cf90|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htaccess.save</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htaccess.save">http://92.51.39.106:8050/.htaccess.save</a></td>
+                    <td><a href=""></a></td>
+                    <td>3984</td>
+                    <td>295</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>108.362165ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cf90</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htpasswd/|http://92.51.39.106:8050/.htpasswd/||4008|291|21|11|text/html; charset=iso-8859-1|98.679775ms|||88b1cfa8|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htpasswd/</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htpasswd/">http://92.51.39.106:8050/.htpasswd/</a></td>
+                    <td><a href=""></a></td>
+                    <td>4008</td>
+                    <td>291</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>98.679775ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cfa8</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htpasswd.bak|http://92.51.39.106:8050/.htpasswd.bak||4011|294|21|11|text/html; charset=iso-8859-1|97.906237ms|||88b1cfab|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htpasswd.bak</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htpasswd.bak">http://92.51.39.106:8050/.htpasswd.bak</a></td>
+                    <td><a href=""></a></td>
+                    <td>4011</td>
+                    <td>294</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>97.906237ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cfab</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htpasswd|http://92.51.39.106:8050/.htpasswd||4007|290|21|11|text/html; charset=iso-8859-1|109.110702ms|||88b1cfa7|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htpasswd</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htpasswd">http://92.51.39.106:8050/.htpasswd</a></td>
+                    <td><a href=""></a></td>
+                    <td>4007</td>
+                    <td>290</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>109.110702ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cfa7</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htpasswd-old|http://92.51.39.106:8050/.htpasswd-old||4015|294|21|11|text/html; charset=iso-8859-1|98.386161ms|||88b1cfaf|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htpasswd-old</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htpasswd-old">http://92.51.39.106:8050/.htpasswd-old</a></td>
+                    <td><a href=""></a></td>
+                    <td>4015</td>
+                    <td>294</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>98.386161ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cfaf</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htpasswds|http://92.51.39.106:8050/.htpasswds||4016|291|21|11|text/html; charset=iso-8859-1|106.112951ms|||88b1cfb0|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htpasswds</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htpasswds">http://92.51.39.106:8050/.htpasswds</a></td>
+                    <td><a href=""></a></td>
+                    <td>4016</td>
+                    <td>291</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>106.112951ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cfb0</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htpasswd.inc|http://92.51.39.106:8050/.htpasswd.inc||4014|294|21|11|text/html; charset=iso-8859-1|108.260659ms|||88b1cfae|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htpasswd.inc</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htpasswd.inc">http://92.51.39.106:8050/.htpasswd.inc</a></td>
+                    <td><a href=""></a></td>
+                    <td>4014</td>
+                    <td>294</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>108.260659ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cfae</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htpasswd_test|http://92.51.39.106:8050/.htpasswd_test||4017|295|21|11|text/html; charset=iso-8859-1|99.509817ms|||88b1cfb1|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htpasswd_test</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htpasswd_test">http://92.51.39.106:8050/.htpasswd_test</a></td>
+                    <td><a href=""></a></td>
+                    <td>4017</td>
+                    <td>295</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>99.509817ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cfb1</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htpasswrd|http://92.51.39.106:8050/.htpasswrd||4018|291|21|11|text/html; charset=iso-8859-1|97.304307ms|||88b1cfb2|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htpasswrd</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htpasswrd">http://92.51.39.106:8050/.htpasswrd</a></td>
+                    <td><a href=""></a></td>
+                    <td>4018</td>
+                    <td>291</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>97.304307ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cfb2</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.htusers|http://92.51.39.106:8050/.htusers||4039|289|21|11|text/html; charset=iso-8859-1|105.601524ms|||88b1cfc7|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.htusers</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.htusers">http://92.51.39.106:8050/.htusers</a></td>
+                    <td><a href=""></a></td>
+                    <td>4039</td>
+                    <td>289</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>105.601524ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cfc7</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|301|images|http://92.51.39.106:8050/images|http://92.51.39.106:8050/images/|4154|319|20|10|text/html; charset=iso-8859-1|98.517868ms|||88b1c103a|
+                </div>
+                <tr class="result-301" style="background-color: #bbbbe6;">
+                    <td><font color="black" class="status-code">301</font></td>
+                    
+                        <td>images</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/images">http://92.51.39.106:8050/images</a></td>
+                    <td><a href="http://92.51.39.106:8050/images/">http://92.51.39.106:8050/images/</a></td>
+                    <td>4154</td>
+                    <td>319</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>98.517868ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c103a</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|500|include/fckeditor/|http://92.51.39.106:8050/include/fckeditor/||4203|611|65|17|text/html; charset=iso-8859-1|98.668375ms|||88b1c106b|
+                </div>
+                <tr class="result-500" style="background-color: #de8dc1;">
+                    <td><font color="black" class="status-code">500</font></td>
+                    
+                        <td>include/fckeditor/</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/include/fckeditor/">http://92.51.39.106:8050/include/fckeditor/</a></td>
+                    <td><a href=""></a></td>
+                    <td>4203</td>
+                    <td>611</td>
+                    <td>65</td>
+					<td>17</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>98.668375ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c106b</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|500|include|http://92.51.39.106:8050/include||4198|611|65|17|text/html; charset=iso-8859-1|106.933792ms|||88b1c1066|
+                </div>
+                <tr class="result-500" style="background-color: #de8dc1;">
+                    <td><font color="black" class="status-code">500</font></td>
+                    
+                        <td>include</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/include">http://92.51.39.106:8050/include</a></td>
+                    <td><a href=""></a></td>
+                    <td>4198</td>
+                    <td>611</td>
+                    <td>65</td>
+					<td>17</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>106.933792ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c1066</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|500|include/|http://92.51.39.106:8050/include/||4199|611|65|17|text/html; charset=iso-8859-1|106.126751ms|||88b1c1067|
+                </div>
+                <tr class="result-500" style="background-color: #de8dc1;">
+                    <td><font color="black" class="status-code">500</font></td>
+                    
+                        <td>include/</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/include/">http://92.51.39.106:8050/include/</a></td>
+                    <td><a href=""></a></td>
+                    <td>4199</td>
+                    <td>611</td>
+                    <td>65</td>
+					<td>17</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>106.126751ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c1067</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|500|include/fckeditor|http://92.51.39.106:8050/include/fckeditor||4202|611|65|17|text/html; charset=iso-8859-1|109.317513ms|||88b1c106a|
+                </div>
+                <tr class="result-500" style="background-color: #de8dc1;">
+                    <td><font color="black" class="status-code">500</font></td>
+                    
+                        <td>include/fckeditor</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/include/fckeditor">http://92.51.39.106:8050/include/fckeditor</a></td>
+                    <td><a href=""></a></td>
+                    <td>4202</td>
+                    <td>611</td>
+                    <td>65</td>
+					<td>17</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>109.317513ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c106a</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|.ht_wsr.txt|http://92.51.39.106:8050/.ht_wsr.txt||4040|292|21|11|text/html; charset=iso-8859-1|568.875186ms|||88b1cfc8|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>.ht_wsr.txt</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/.ht_wsr.txt">http://92.51.39.106:8050/.ht_wsr.txt</a></td>
+                    <td><a href=""></a></td>
+                    <td>4040</td>
+                    <td>292</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>568.875186ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1cfc8</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|index.php|http://92.51.39.106:8050/index.php||4278|3362|446|82|text/html|104.582974ms|||88b1c10b6|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>index.php</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/index.php">http://92.51.39.106:8050/index.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>4278</td>
+                    <td>3362</td>
+                    <td>446</td>
+					<td>82</td>
+					<td>text/html</td>
+					<td>104.582974ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c10b6</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|index.php/login/|http://92.51.39.106:8050/index.php/login/||4287|3362|446|82|text/html|113.869342ms|||88b1c10bf|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>index.php/login/</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/index.php/login/">http://92.51.39.106:8050/index.php/login/</a></td>
+                    <td><a href=""></a></td>
+                    <td>4287</td>
+                    <td>3362</td>
+                    <td>446</td>
+					<td>82</td>
+					<td>text/html</td>
+					<td>113.869342ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c10bf</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|301|pictures|http://92.51.39.106:8050/pictures|http://92.51.39.106:8050/pictures/|6135|321|20|10|text/html; charset=iso-8859-1|106.464453ms|||88b1c17f7|
+                </div>
+                <tr class="result-301" style="background-color: #bbbbe6;">
+                    <td><font color="black" class="status-code">301</font></td>
+                    
+                        <td>pictures</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/pictures">http://92.51.39.106:8050/pictures</a></td>
+                    <td><a href="http://92.51.39.106:8050/pictures/">http://92.51.39.106:8050/pictures/</a></td>
+                    <td>6135</td>
+                    <td>321</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>106.464453ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c17f7</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|server-status|http://92.51.39.106:8050/server-status||7037|294|21|11|text/html; charset=iso-8859-1|97.5805ms|||88b1c1b7d|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>server-status</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/server-status">http://92.51.39.106:8050/server-status</a></td>
+                    <td><a href=""></a></td>
+                    <td>7037</td>
+                    <td>294</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>97.5805ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c1b7d</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|403|server-status/|http://92.51.39.106:8050/server-status/||7038|295|21|11|text/html; charset=iso-8859-1|100.171829ms|||88b1c1b7e|
+                </div>
+                <tr class="result-403" style="background-color: #d2cb7e;">
+                    <td><font color="black" class="status-code">403</font></td>
+                    
+                        <td>server-status/</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/server-status/">http://92.51.39.106:8050/server-status/</a></td>
+                    <td><a href=""></a></td>
+                    <td>7038</td>
+                    <td>295</td>
+                    <td>21</td>
+					<td>11</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>100.171829ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c1b7e</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|test.php|http://92.51.39.106:8050/test.php||7928|142|6|11|text/html|109.072969ms|||88b1c1ef8|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>test.php</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/test.php">http://92.51.39.106:8050/test.php</a></td>
+                    <td><a href=""></a></td>
+                    <td>7928</td>
+                    <td>142</td>
+                    <td>6</td>
+					<td>11</td>
+					<td>text/html</td>
+					<td>109.072969ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c1ef8</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|301|upload|http://92.51.39.106:8050/upload|http://92.51.39.106:8050/upload/|8219|319|20|10|text/html; charset=iso-8859-1|101.548789ms|||88b1c201b|
+                </div>
+                <tr class="result-301" style="background-color: #bbbbe6;">
+                    <td><font color="black" class="status-code">301</font></td>
+                    
+                        <td>upload</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/upload">http://92.51.39.106:8050/upload</a></td>
+                    <td><a href="http://92.51.39.106:8050/upload/">http://92.51.39.106:8050/upload/</a></td>
+                    <td>8219</td>
+                    <td>319</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>101.548789ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c201b</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|upload/|http://92.51.39.106:8050/upload/||8220|3702|236|31|text/html;charset=UTF-8|112.413333ms|||88b1c201c|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>upload/</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/upload/">http://92.51.39.106:8050/upload/</a></td>
+                    <td><a href=""></a></td>
+                    <td>8220</td>
+                    <td>3702</td>
+                    <td>236</td>
+					<td>31</td>
+					<td>text/html;charset=UTF-8</td>
+					<td>112.413333ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c201c</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|301|users|http://92.51.39.106:8050/users|http://92.51.39.106:8050/users/|8307|318|20|10|text/html; charset=iso-8859-1|98.447531ms|||88b1c2073|
+                </div>
+                <tr class="result-301" style="background-color: #bbbbe6;">
+                    <td><font color="black" class="status-code">301</font></td>
+                    
+                        <td>users</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/users">http://92.51.39.106:8050/users</a></td>
+                    <td><a href="http://92.51.39.106:8050/users/">http://92.51.39.106:8050/users/</a></td>
+                    <td>8307</td>
+                    <td>318</td>
+                    <td>20</td>
+					<td>10</td>
+					<td>text/html; charset=iso-8859-1</td>
+					<td>98.447531ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c2073</td>
+                </tr>
+            
+                <div style="display:none">
+|result_raw|200|users/|http://92.51.39.106:8050/users/||8308|2352|153|24|text/html;charset=UTF-8|107.919206ms|||88b1c2074|
+                </div>
+                <tr class="result-200" style="background-color: #adea9e;">
+                    <td><font color="black" class="status-code">200</font></td>
+                    
+                        <td>users/</td>
+                    
+                    <td><a href="http://92.51.39.106:8050/users/">http://92.51.39.106:8050/users/</a></td>
+                    <td><a href=""></a></td>
+                    <td>8308</td>
+                    <td>2352</td>
+                    <td>153</td>
+					<td>24</td>
+					<td>text/html;charset=UTF-8</td>
+					<td>107.919206ms</td>
+                    <td></td>
+					<td></td>
+					<td>88b1c2074</td>
+                </tr>
+            
+        </tbody>
+      </table>
+
+        </div>
+        <br /><br />
+      </div>
+    </main>
+
+    
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#ffufreport').DataTable(
+            {
+                "aLengthMenu": [
+                    [250, 500, 1000, 2500, -1],
+                    [250, 500, 1000, 2500, "All"]
+                ]
+            }
+        )
+        $('select').formSelect();
+        });
+    </script>
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+
+      main {
+        flex: 1 0 auto;
+      }
+    </style>
+  </body>
+</html>
+
+	
