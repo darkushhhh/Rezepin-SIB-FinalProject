@@ -28,7 +28,9 @@ nmap -A -sV --version-all -O -p 8050 --reason -T4 --defeat-rst-ratelimit 92.51.3
 **Результаты сканирования:**  
 <details>
 <summary>screenshot Nmap(8050)</summary>
+ 
 ![](screenshots/SCANNING/nmap/nmap_8050.png)
+
 </details>
 
 **Вывод:**  
@@ -51,7 +53,9 @@ nmap -A -sV --version-all -O -p 7788 --reason -T4 --defeat-rst-ratelimit 92.51.3
 **Результаты сканирования:**  
 <details>
 <summary>screenshot Nmap(7788)</summary>
+ 
 ![](screenshots/SCANNING/nmap/nmap_7788.png)
+
 </details>
 
 **Вывод:**  
@@ -79,7 +83,9 @@ nikto -host http://92.51.39.106:8050 -output output.html -Format htm
 **Результаты сканирования:**  
 <details>
 <summary>screenshot Nikto(8050)</summary>
+ 
 ![](screenshots/SCANNING/nikto/nikto_8050.png)
+
 </details>
 
 **Вывод:**  
@@ -102,7 +108,9 @@ nikto -host http://92.51.39.106:7788 -output output.html -Format htm
 **Результат:**  
 <details>
 <summary>screenshot Nikto(7788)</summary>
+ 
 ![](screenshots/SCANNING/nikto/nikto_7788.png)
+
 </details>
 
 **Вывод:**  
@@ -127,7 +135,9 @@ gobuster dir -u http://92.51.39.106:8050 -w dirbrute.txt -t 50 -o output.html -f
 **Результат:**  
 <details>
 <summary>screenshot Gobuster(8050)</summary>
+ 
 ![](screenshots/SCANNING/gobuster/gobuster_8050.png)
+
 </details>
 
 **Вывод:**  
@@ -150,7 +160,9 @@ gobuster dir -u http://92.51.39.106:7788 -w dirbrute.txt -t 50 -o output.html -f
 **Результат:**  
 <details>
 <summary>screenshot Gobuster(7788)</summary>
+ 
 ![](screenshots/SCANNING/gobuster/gobuster_7788.png)
+
 </details>
 
 **Вывод:**  
@@ -174,7 +186,9 @@ ffuf -w dirbrute.txt -u http://92.51.39.106:8050/FUZZ -t 50 -o output.html -of h
 **Результат:**  
 <details>
 <summary>screenshot FFUF(8050)</summary>
+ 
 ![](screenshots/SCANNING/ffuf/ffuf_8050.png)
+
 </details>
 
 **Вывод:**  
@@ -197,7 +211,9 @@ ffuf -w dirbrute.txt -u http://92.51.39.106:7788/FUZZ -t 50 -o output.html -of h
 **Результат:**  
 <details>
 <summary>screenshot FFUF(7788)</summary>
+ 
 ![](screenshots/SCANNING/ffuf/ffuf_7788.png)
+
 </details>
 
 **Вывод:**  
@@ -219,7 +235,9 @@ ffuf -w dirbrute.txt -u http://92.51.39.106:7788/FUZZ -t 50 -o output.html -of h
 **Результат:**  
 <details>
 <summary>screenshot ZAP(8050)</summary>
+ 
 ![](screenshots/SCANNING/ZAP/zap_8050.png)
+
 </details>
 
 **Вывод:**  
@@ -239,7 +257,9 @@ ffuf -w dirbrute.txt -u http://92.51.39.106:7788/FUZZ -t 50 -o output.html -of h
 **Результат:**  
 <details>
 <summary>screenshot ZAP(7788)</summary>
+ 
 ![](screenshots/SCANNING/ZAP/zap_7788.png)
+
 </details>
 
 **Вывод:**  
