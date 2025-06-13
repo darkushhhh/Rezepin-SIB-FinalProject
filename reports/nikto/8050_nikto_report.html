@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+ <title>Nikto Report</title>
+ <style type="text/css">
+  .dataTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 11pt; 
+   font-weight: normal; 
+   color: #000066;
+   background: #EEEEEE;
+   border: thin solid black;
+   width: 95%;
+  }
+  .headerTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 15pt; 
+   font-weight: normal; 
+   color: white;
+   background: #000066;
+   border: thin solid black;
+   width: 300px;
+  }
+  .column-head
+  {
+   width: 15em;
+   font-weight:bold;
+   vertical-align: top;
+  }
+  .copyright
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   font-style: italic;
+   color: black;
+  }
+  body
+  {
+   background: white;
+  }
+ </style>
+</head>
+<body>
+<div>
+<a name="1"></a>
+<table class="headerTable">
+ <tr>
+   <td>92.51.39.106 / 92.51.39.106 port 8050</td>
+ </tr>
+</table>
+<table class="dataTable">
+ <tr>
+   <td class="column-head">Target IP</td>
+   <td>92.51.39.106</td>
+ </tr>
+ <tr>
+   <td class="column-head">Target hostname</td>
+   <td>92.51.39.106</td>
+ </tr>
+  <tr>
+   <td class="column-head">Target Port</td>
+   <td>8050</td>
+ </tr>
+  <tr>
+   <td class="column-head">HTTP Server</td>
+   <td>Apache/2.4.7 (Ubuntu)</td>
+ </tr>
+ <tr>
+   <td class="column-head">Site Link (Name)</td>
+   <td><a href="http://92.51.39.106:8050/">http://92.51.39.106:8050/</a></td>
+ </tr>
+ <tr>
+   <td class="column-head">Site Link (IP)</td>
+   <td><a href="http://92.51.39.106:8050/">http://92.51.39.106:8050/</a></td>
+ </tr>
+ </table>
+</div>
+<p></p>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/: Cookie PHPSESSID created without the httponly flag.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://92.51.39.106:8050/">http://92.51.39.106:8050/</a><br>
+      <a href="http://92.51.39.106:8050/">http://92.51.39.106:8050/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies'>https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/: Retrieved x-powered-by header: PHP/5.5.9-1ubuntu4.29.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://92.51.39.106:8050/">http://92.51.39.106:8050/</a><br>
+      <a href="http://92.51.39.106:8050/">http://92.51.39.106:8050/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/: The anti-clickjacking X-Frame-Options header is not present.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://92.51.39.106:8050/">http://92.51.39.106:8050/</a><br>
+      <a href="http://92.51.39.106:8050/">http://92.51.39.106:8050/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options'>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://92.51.39.106:8050/">http://92.51.39.106:8050/</a><br>
+      <a href="http://92.51.39.106:8050/">http://92.51.39.106:8050/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/'>https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>Apache/2.4.7 appears to be outdated (current is at least Apache/2.4.54). Apache 2.2.34 is the EOL for the 2.x branch.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://92.51.39.106:8050/">http://92.51.39.106:8050/</a><br>
+      <a href="http://92.51.39.106:8050/">http://92.51.39.106:8050/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>STDFKACJ</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/: Web Server returns a valid response with junk HTTP methods which may cause false positives.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://92.51.39.106:8050/">http://92.51.39.106:8050/</a><br>
+      <a href="http://92.51.39.106:8050/">http://92.51.39.106:8050/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/admin/login.php?action=insert&username=test&password=test</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/admin/login.php?action=insert&username=test&password=test: phpAuction may allow user admin accounts to be inserted without proper authentication. Attempt to log in with user 'test' password 'test' to verify.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://92.51.39.106:8050/admin/login.php?action=insert&username=test&password=test">http://92.51.39.106:8050/admin/login.php?action=insert&username=test&password=test</a><br>
+      <a href="http://92.51.39.106:8050/admin/login.php?action=insert&username=test&password=test">http://92.51.39.106:8050/admin/login.php?action=insert&username=test&password=test</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0995'>CVE-2002-0995</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/admin/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/admin/: PHP include error may indicate local or remote file inclusion is possible.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://92.51.39.106:8050/admin/">http://92.51.39.106:8050/admin/</a><br>
+      <a href="http://92.51.39.106:8050/admin/">http://92.51.39.106:8050/admin/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/admin/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/admin/: This might be interesting.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://92.51.39.106:8050/admin/">http://92.51.39.106:8050/admin/</a><br>
+      <a href="http://92.51.39.106:8050/admin/">http://92.51.39.106:8050/admin/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/cart/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/cart/: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://92.51.39.106:8050/cart/">http://92.51.39.106:8050/cart/</a><br>
+      <a href="http://92.51.39.106:8050/cart/">http://92.51.39.106:8050/cart/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/cart/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/cart/: This might be interesting.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://92.51.39.106:8050/cart/">http://92.51.39.106:8050/cart/</a><br>
+      <a href="http://92.51.39.106:8050/cart/">http://92.51.39.106:8050/cart/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/css/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/css/: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://92.51.39.106:8050/css/">http://92.51.39.106:8050/css/</a><br>
+      <a href="http://92.51.39.106:8050/css/">http://92.51.39.106:8050/css/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/css/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/css/: This might be interesting.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://92.51.39.106:8050/css/">http://92.51.39.106:8050/css/</a><br>
+      <a href="http://92.51.39.106:8050/css/">http://92.51.39.106:8050/css/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/users/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/users/: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://92.51.39.106:8050/users/">http://92.51.39.106:8050/users/</a><br>
+      <a href="http://92.51.39.106:8050/users/">http://92.51.39.106:8050/users/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/users/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/users/: This might be interesting.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://92.51.39.106:8050/users/">http://92.51.39.106:8050/users/</a><br>
+      <a href="http://92.51.39.106:8050/users/">http://92.51.39.106:8050/users/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/admin/index.php</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/admin/index.php: PHP include error may indicate local or remote file inclusion is possible.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://92.51.39.106:8050/admin/index.php">http://92.51.39.106:8050/admin/index.php</a><br>
+      <a href="http://92.51.39.106:8050/admin/index.php">http://92.51.39.106:8050/admin/index.php</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/admin/index.php</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/admin/index.php: This might be interesting: has been seen in web logs from an unknown scanner.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://92.51.39.106:8050/admin/index.php">http://92.51.39.106:8050/admin/index.php</a><br>
+      <a href="http://92.51.39.106:8050/admin/index.php">http://92.51.39.106:8050/admin/index.php</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/images/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/images/: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://92.51.39.106:8050/images/">http://92.51.39.106:8050/images/</a><br>
+      <a href="http://92.51.39.106:8050/images/">http://92.51.39.106:8050/images/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/icons/README</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/icons/README: Apache default file found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://92.51.39.106:8050/icons/README">http://92.51.39.106:8050/icons/README</a><br>
+      <a href="http://92.51.39.106:8050/icons/README">http://92.51.39.106:8050/icons/README</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://www.vntweb.co.uk/apache-restricting-access-to-iconsreadme/'>https://www.vntweb.co.uk/apache-restricting-access-to-iconsreadme/</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/admin/login.php</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/admin/login.php: Admin login page/section found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://92.51.39.106:8050/admin/login.php">http://92.51.39.106:8050/admin/login.php</a><br>
+      <a href="http://92.51.39.106:8050/admin/login.php">http://92.51.39.106:8050/admin/login.php</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/test.php</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/test.php: This might be interesting.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://92.51.39.106:8050/test.php">http://92.51.39.106:8050/test.php</a><br>
+      <a href="http://92.51.39.106:8050/test.php">http://92.51.39.106:8050/test.php</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/#wp-config.php#</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/#wp-config.php#: #wp-config.php# file found. This file contains the credentials.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://92.51.39.106:8050/#wp-config.php#">http://92.51.39.106:8050/#wp-config.php#</a><br>
+      <a href="http://92.51.39.106:8050/#wp-config.php#">http://92.51.39.106:8050/#wp-config.php#</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<div>
+<p></p>
+<table class="headerTable">
+ <tr>
+  <td>Host Summary</td>
+ </tr>
+</table>
+<table  class="dataTable">
+ <tr>
+  <td class="column-head">Start Time</td>
+  <td>2025-06-02 09:19:59</td>
+ </tr>
+ <tr>
+  <td class="column-head">End Time</td>
+  <td>2025-06-02 09:36:31</td>
+ </tr>
+ <tr>
+  <td class="column-head">Elapsed Time</td>
+  <td>992 seconds</td>
+ </tr>
+ <tr>
+  <td class="column-head">Statistics</td>
+  <td>8910 requests, 0 errors, 22 findings</td>
+ </tr>
+</table>
+</div>
+<p></p>
+
+<p></p>
+<table class="headerTable">
+  <tr>
+    <td>Scan Summary</td>
+  </tr>
+</table>
+<table class="dataTable">
+  <tr>
+    <td class="column-head">Software Details</td>
+    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
+  <tr>
+    <td class="column-head">CLI Options</td>
+    <td>-host http://92.51.39.106:8050 -output output.html -Format htm</td>
+  </tr>
+  <tr>
+    <td class="column-head">Hosts Tested</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td class="column-head">Start Time</td>
+    <td>Mon Jun  2 09:19:58 2025</td>
+  </tr>
+  <tr>
+    <td class="column-head">End Time</td>
+    <td>Mon Jun  2 09:36:31 2025</td>
+  </tr>
+  <tr>
+    <td class="column-head">Elapsed Time</td>
+    <td>993 seconds</td>
+  </tr>
+</table>
+<p></p>
+<p class="copyright">&copy; 2008 Chris Sullo</p>
+
+<!-- (c) 2008 Chris Sullo -->
+
+</body>
+</html>
+
