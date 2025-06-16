@@ -280,10 +280,8 @@ ___
 
 В результате анализа было выявлено, что тестируемая веб-страница уязвима к атакам типа **SQLi**. Для подтверждения уязвимости на странице авторизации была введена следующая SQL-команда: `' OR TRUE #`.
 
-![](screenshots/TESTING/SQL_Injection/8050/sample_log.png)
+![](screenshots/TESTING/SQL_Injection/8050/sample.png)
 
-![](screenshots/TESTING/SQL_Injection/8050/sample.pmg)
-   
 
 - **Вывод**
     
