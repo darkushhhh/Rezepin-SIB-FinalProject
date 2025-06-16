@@ -226,14 +226,14 @@ ___
 Переходим на страницу авторизации пользователя и отправляем запрос:
 `http://92.51.39.106:8050/users/login.php`
     
-![](screenshots/TESTING/Sensitive_Data/login.png)
+![](screenshots/TESTING/Sensitive_Data/8050/login.png)
 
 
 - **Step 2. Перехват трафика**
 
 С помощью программы `Burp Suite` осуществляем перехват аутентификационных данных пользователя:
 
-![](screenshots/TESTING/Sensitive_Data/burp.png)
+![](screenshots/TESTING/Sensitive_Data/8050/burp.png)
    
 
 - **Вывод**
