@@ -11,7 +11,7 @@
 - [FFUF](https://github.com/ffuf/ffuf) : Быстрое сканирование веб-ресурсов для обнаружения скрытых файлов, директорий и параметров.
 - [ZAP](https://www.zaproxy.org) : Автоматизированное тестирование веб-приложений на наличие уязвимостей.
 
----
+___
 
 ## 1. Сканирование с использованием Nmap
 
@@ -38,7 +38,7 @@ nmap -A -sV --version-all -O -p 8050 --reason -T4 --defeat-rst-ratelimit 92.51.3
 
 Полная версия отчета Nmap (8050) - [NmapReport_8050](reports/nmap/nmap_report.txt)
 
----
+___
 
 ### Beemer (7788)
 
@@ -66,7 +66,7 @@ nmap -A -sV --version-all -O -p 7788 --reason -T4 --defeat-rst-ratelimit 92.51.3
 
 Полная версия отчета Nmap (7788) - [NmapReport_7788](reports/nmap/nmap_report.txt)
 
----
+___
 
 ## 2. Сканирование с использованием Nikto
 
@@ -93,7 +93,7 @@ nikto -host http://92.51.39.106:8050 -output output.html -Format htm
 
 Полная версия отчета Nikto (8050) - [NiktoReport_8050](reports/nikto/8050_nikto_report.html)
 
----
+___
 
 ### Beemer (7788)
 
@@ -118,7 +118,7 @@ nikto -host http://92.51.39.106:7788 -output output.html -Format htm
 
 Полная версия отчета Nikto (7788) - [NiktoReport_7788](reports/nikto/7788_nikto_report.html)
 
----
+___
 
 ## 3. Сканирование с использованием Gobuster
 
@@ -145,7 +145,7 @@ gobuster dir -u http://92.51.39.106:8050 -w dirbrute.txt -t 50 -o output.html -f
 
 Полная версия отчета Gobuster (8050) - [GobusterReport_8050](reports/gobuster/8050_gobuster_report.html)
 
----
+___
 
 ### Beemer (7788)
 
@@ -170,7 +170,7 @@ gobuster dir -u http://92.51.39.106:7788 -w dirbrute.txt -t 50 -o output.html -f
 
 Полная версия отчета Gobuster (7788) - [GobusterReport_7788](reports/gobuster/7788_gobuster_report.html)
 
----
+___
 
 ## 4. Сканирование с использованием FFUF
 
@@ -196,7 +196,7 @@ ffuf -w dirbrute.txt -u http://92.51.39.106:8050/FUZZ -t 50 -o output.html -of h
 
 Полная версия отчета FFUF (8050) - [FFUFReport_8050](reports/ffuf/8050_ffuf_report.html)
 
----
+___
 
 ### Beemer (7788)
 
@@ -221,7 +221,7 @@ ffuf -w dirbrute.txt -u http://92.51.39.106:7788/FUZZ -t 50 -o output.html -of h
 
 Полная версия отчета FFUF (7788) - [FFUFReport_7788](reports/ffuf/7788_ffuf_report.html)
 
----
+___
 
 ## 5. Сканирование с использованием ZAP
 
@@ -245,7 +245,7 @@ ffuf -w dirbrute.txt -u http://92.51.39.106:7788/FUZZ -t 50 -o output.html -of h
 
 Полная версия отчета ZAP (8050) - [ZAPReport_8050](reports/zap/8050_zap_report.html)
 
----
+___
 
 ### Beemer (7788)
 **Цель:**  
@@ -267,12 +267,11 @@ ffuf -w dirbrute.txt -u http://92.51.39.106:7788/FUZZ -t 50 -o output.html -of h
 
 Полная версия отчета ZAP (7788) - [ZAPReport_7788](reports/zap/7788_zap_report.html)
 
----
+___
 
 ## Результаты сканирования веб-приложений
 
 В ходе автоматического сканирования двух целевых веб-приложений — `NetologyVulnApp.com`  и `Beemer` — с использованием инструментов `Nmap`, `Nikto`, `Gobuster`, `FFUF` и `ZAP` были получены данные, которые послужат ориентиром для последующего ручного тестирования на проникновение.  
-
 
 ### 1. Основные уязвимости в веб-приложениях
 
@@ -296,7 +295,7 @@ ffuf -w dirbrute.txt -u http://92.51.39.106:7788/FUZZ -t 50 -o output.html -of h
 - Path Traversal
 - Directory Browsing
 
----
+___
 
 ### 2. Потенциально опасные директории и файлы
 
@@ -311,10 +310,10 @@ ffuf -w dirbrute.txt -u http://92.51.39.106:7788/FUZZ -t 50 -o output.html -of h
 
 - Не выявлено
 
----
+___
 
 ## Перейти к следующей странице
  
 Далее: Этап №3. [**TESTING**](./TESTING.md)
 
----
+___
