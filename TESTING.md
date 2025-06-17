@@ -494,7 +494,7 @@ ___
 
 ### 2. Vulnerability - Command Injection
 
-**OWASP:** [A01:2021-Broken Access Control](https://owasp.org/Top10/A01_2021-Broken_Access_Control/)
+**OWASP:** [A03:2021-Injection](https://owasp.org/Top10/A03_2021-Injection/)
 
 **Уровень риска:** Критический
 
