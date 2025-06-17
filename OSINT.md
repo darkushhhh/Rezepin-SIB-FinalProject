@@ -7,7 +7,7 @@
 - [Censys Search](https://search.censys.io)
 - [ZoomEye](https://www.zoomeye.ai)
 
----
+___
 
 ## Сканирование IP-адреса
 
@@ -30,7 +30,7 @@
 Обнаружен открытый порт с развернутым сервисом:  
 - **22 (SSH)** — OpenBSD OpenSSH 8.2
 
----
+___
 
 ### 2. **Censys Search**
 
@@ -52,7 +52,7 @@
 - **22 (SSH)** — OpenBSD OpenSSH 8.2
 - **8050 (HTTP)** — Apache HTTPD 2.4.7, PHP 5.5.9
 
----
+___
 
 ### 3. **ZoomEye**
 
@@ -73,7 +73,7 @@
 Обнаружен открытый порт с развернутым сервисом:
   - **7788 (HTTP)** — Tornado httpd 5.1.1
 
----
+___
 
 ## Итоги OSINT исследования
 
@@ -93,10 +93,10 @@
 
 </details>
 
----
+___
 
 ## Перейти к следующей странице
  
 Далее: Этап №2. [**SCANNING**](./SCANNING.md)
 
----
+___
