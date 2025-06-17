@@ -26,10 +26,10 @@
 | 9  | Средний       | Brute Force Attack                          | [A07:2021-Identification and Authentication Failures](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/) | 8050, 7788         |
 | 10 | Средний       | Cross-Site Scripting (XSS)                  | [A03:2021-Injection](https://owasp.org/Top10/A03_2021-Injection/)                          | 8050, 7788         |
 
----
+___
 
 ## Перейти к следующей странице
  
 Далее: Этап №1. [**OSINT**](./OSINT.md)
 
----
+___
